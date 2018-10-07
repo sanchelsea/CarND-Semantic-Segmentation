@@ -2,10 +2,10 @@
 
 [//]: # (Image References)
 [image1]: ./runs/um_000015.png
-[image2]: ./runs/um_000017.png
-[image3]: ./runs/um_000026.png
-[image4]: ./runs/um_000040.png
-[image5]: ./runs/um_000091.png
+[image2]: ./runs/uu_000017.png
+[image3]: ./runs/uu_000026.png
+[image4]: ./runs/uu_000040.png
+[image5]: ./runs/uu_000091.png
 
 ### Introduction
 The goal of this project is to construct a Fully Convolutional Neural Network (FCN) based on the pre trained VGG-16 model for performing semantic segmentation to abel the pixels of a road in the images from a car dashcam.
