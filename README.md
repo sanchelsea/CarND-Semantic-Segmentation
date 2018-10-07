@@ -1,6 +1,41 @@
 # Semantic Segmentation
+
+[//]: # (Image References)
+[image1]: ./runs/um_000015.png
+[image2]: ./runs/um_000017.png
+[image3]: ./runs/um_000026.png
+[image4]: ./runs/um_000040.png
+[image5]: ./runs/um_000091.png
+
 ### Introduction
-In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN).
+The goal of this project is to construct a Fully Convolutional Neural Network (FCN) based on the pre trained VGG-16 model for performing semantic segmentation to abel the pixels of a road in the images from a car dashcam.
+
+### Architecture
+The Fully Convolutional Network (FCN) is based on a pre-rained VGG-16 image classification network. The VGG-16 network without its fully connected layers acts as the encoder. For the decoder, the layers 3, 4 and 7 were extracted and several upsampling and skip connections are implemented (main.py line 60 - 100).
+
+### Training
+The network was trained on the KTTI Road dataset. Cross entropy loss function with a Learning rate of 1e-04 is used and Adam optimizer to minimze the loss.
+
+
+#### Hyper parameters
+- Learning rate = 0.0001
+- Dropout = 0.5
+- L2 Regularization = 0.001
+- Initializer standard deviation = 0.01
+- Batch size = 10
+- Epochs = 30
+
+Predicted images are available in the directory /runs/1538875673.856644.
+Some sample ones are 
+
+
+![alt text][image1]
+![alt text][image2]
+![alt text][image3]
+![alt text][image4]
+![alt text][image5]
+
+
 
 ### Setup
 ##### GPU
