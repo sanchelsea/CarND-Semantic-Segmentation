@@ -16,7 +16,6 @@ The Fully Convolutional Network (FCN) is based on a pre-rained VGG-16 image clas
 ### Training
 The network was trained on the KTTI Road dataset. Cross entropy loss function with a Learning rate of 1e-04 is used and Adam optimizer to minimze the loss.
 
-
 #### Hyper parameters
 - Learning rate = 0.0001
 - Dropout = 0.5
@@ -28,7 +27,6 @@ The network was trained on the KTTI Road dataset. Cross entropy loss function wi
 Predicted images are available in the directory /runs/1538875673.856644.
 Some sample ones are 
 
-
 ![alt text][image1]
 ![alt text][image2]
 ![alt text][image3]
@@ -36,6 +34,7 @@ Some sample ones are
 ![alt text][image5]
 
 
+Next step would be to augment the data set for brightness, rotation, sheer.
 
 ### Setup
 ##### GPU
